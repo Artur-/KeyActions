@@ -42,6 +42,8 @@ public class KeyActionConnector extends AbstractExtensionConnector {
 		Scheduler.get().scheduleDeferred(new ScheduledCommand() {
 			@Override
 			public void execute() {
+				((AbstractComponentConnector) getParent()).flush();
+
 				getRpcProxy(KeyActionServerRpc.class).trigger();
 			}
 		});

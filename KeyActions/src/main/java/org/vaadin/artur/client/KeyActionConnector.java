@@ -6,11 +6,9 @@ import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
-import com.google.gwt.user.client.Event;
 import com.vaadin.client.ServerConnector;
 import com.vaadin.client.extensions.AbstractExtensionConnector;
 import com.vaadin.client.ui.AbstractComponentConnector;
-import com.vaadin.client.ui.ShortcutActionHandler.BeforeShortcutActionListener;
 import com.vaadin.shared.ui.Connect;
 
 @Connect(KeyAction.class)
@@ -44,12 +42,6 @@ public class KeyActionConnector extends AbstractExtensionConnector {
 		Scheduler.get().scheduleDeferred(new ScheduledCommand() {
 			@Override
 			public void execute() {
-				if (getParent() instanceof BeforeShortcutActionListener) {
-					((BeforeShortcutActionListener) getParent())
-							.onBeforeShortcutAction(Event.as(event
-									.getNativeEvent()));
-				}
-
 				getRpcProxy(KeyActionServerRpc.class).trigger();
 			}
 		});

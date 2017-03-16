@@ -6,11 +6,11 @@
 	<packaging>war</packaging>
 	<name>KeyActions Demo</name>
 	<groupId>org.vaadin.artur</groupId>
-	<version>0.2-SNAPSHOT</version>
+	<version>1.2-SNAPSHOT</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
-		<vaadin.version>7.7.5</vaadin.version>
+		<vaadin.version>8.0.2</vaadin.version>
 	</properties>
 
 	<licenses>

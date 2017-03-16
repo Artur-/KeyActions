@@ -1,4 +1,4 @@
-# KeyActions add-on for Vaadin 7
+# KeyActions add-on for Vaadin 8
 
 A better way to handle key events than the built-in shortcut actions
 

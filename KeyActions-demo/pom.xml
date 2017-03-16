@@ -6,11 +6,11 @@
 	<packaging>war</packaging>
 	<name>KeyActions Demo</name>
 	<groupId>org.vaadin.artur</groupId>
-	<version>0.2-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
-		<vaadin.version>7.7.5</vaadin.version>
+		<vaadin.version>8.0.2</vaadin.version>
 	</properties>
 
 	<licenses>
@@ -89,8 +89,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.0</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 
